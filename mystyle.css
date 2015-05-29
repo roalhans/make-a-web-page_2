@@ -1,0 +1,50 @@
+/* Hans Notes CSS File.*/
+
+/* 
+CSS are made of, between other tags and attributes
+
+class="name of my class"
+id="name of my id's (do not use this too much)"
+tag references = h1,body,b,span,p,etc.
+
+*/
+.notes {
+	background-color: #07395f;
+	border-radius: 40px;
+	color: white;
+	padding: 10px;
+}
+
+.subnotes {
+	background-color: yellow;
+	border-radius: 40px;
+	color: black;
+	padding: 10px;
+}
+
+/*I can use either hex or rgb.*/
+h1 {
+	text-align: left;
+	color: blue; 
+}
+
+h2 {
+	color: blue;
+}
+
+p {
+	text-align: left;
+	font-size: 18px;
+}
+
+body {
+	font-family: Arial,Helvetica,sans-serif;	
+}
+
+/* I took this from w3schools*/
+
+a {
+	color: yellow;
+}
+
+

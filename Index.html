@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hans Notes 1P</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+	<h1>HTML Notes in General (1st Lesson)</h1>
+	<div class="notes"><h3>HTML is made up of</h3>
+		<div>
+			<p>Refereces to other documents.</p>
+				<div>
+					<p>Links to another pages.</p>
+						<div>
+							<p>Markups are made of tags.</p>
+								<div>
+									"This last sentence exemplifys div branching"
+								</div>
+		</div>
+				</div>
+						</div>
+	</div>	
+	
+	<h2 class="subnotes">Subnotes</h2>
+		<div>
+			<p>
+				Tag-content-tag = Element
+				em = emphasis -> italic
+				&lt;span&gt; is inline and div is block
+			</p>
+			<p>
+				The &lt; a &gt; stands for Anchor Tag
+			</p>
+			<p>
+				The BR it's tricky, it seems like a block tag, but doesn't make a box on the screen.
+			
+				What was the "strong" tag? (I'm getting back here). Strong makes bold the whole sentence, while b tag is used to bold a part of the sentence. Correction made by instructor review: Actually, &ltstrong&gt and &ltb&gt can make either part or all of a sentence bold. The difference is in semantics and style options. The &ltstrong&gt tag adds a semantic meaning to the text you want bolded. And you can target &ltstrong&gt in your CSS more effectively.
+				And what is "Form" tag? (I searched this in w3 Schools) The form tag is used to create an HTML form for user input.
+			</p>
+		</div>	
+	<h1>CREATING A STRUCTURED DOCUMENT WITH HTML (2D LESSON)</h1>
+	<div class="notes">
+		
+			<h3>Box Sizing (Copied from Instructor Notes)</h3>
+			
+			<p>There are four main points that Jessica addressed about box sizing.<br>
+
+			HTML elements are boxes and each box has 4 components.<br>
+			Because there are so many components to each box, it can often be hard to get the size of a box just right.<br>
+			There are two techniques you can use to help deal with sizing issues.<br>
+			</p>
+
+			<p>
+			Set sizes in terms of percentages rather than pixels.<br>
+			Set the box-sizing attribute to border-box for every element (I need to try more<br> examples of this)<br>
+
+			Different browsers work slightly differently. Sometimes this causes different browsers<br> to display the same code differently.<br>
+			</p>
+
+			<h3>Box Positioning</h3>
+
+			<p>
+			Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.<br>
+			(Correction: Actually, the width of block elements is relative to their containing elements. A div will take up the entire width of its parent by default.)
+			Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other.<br>
+			</p>
+
+			(Took from w3 Schools)<br>
+			The CSS Box Model<br>
+
+			<p>
+			All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
+
+			The CSS box model is essentially a box that wraps around HTML elements, and it consists of: margins, borders, padding, and the actual content.
+
+			The box model allows us to add a border around elements, and to define space between elements.
+			</p>
+	</div>
+	<h1>ADDING CSS STYLE TO HTML STRUCTURE (3RD LESSON)</h1>
+	<div class="notes">
+		<p>
+			Always on the Head tag should we use the CSS tags or styling? I'm getting back here... Yes, though I tested using it outside or even outside html tag it works, but it's incorrect since it does not comply with the HTML structure. 
+		</p>
+		<p>
+			Ok, you havve 2 ways of working or inserting style to your HTML document.<br>
+			You can just add tag style tag or add the link tag. 
+			In the first one, you set all the attributes you need, then you start with the head tag, so every code you write after that, becomes stylished. (I'm getting back here. I was stating this after several days of not touching my project, and this is what I remembered. Now I see its wrong, well partially wrong).
+		</p>
+		<p>
+			The second one is to relate your HTML to another document, which in this case will be a css doc, where you will set all the attributes you need and then just make reference to it, stating that same document as a whole and the using the parts you need with the class=xxx tag.
+		</p>
+			<p>
+			Three Ways to Insert CSS (I researched this on w3 school)
+			There are three ways of inserting a style sheet:
+			</p>
+			
+			<h3>INSIDE HEAD</h3>			
+			External style sheet-> &lt; link rel="stylesheet" type="text/css" href="mystyle.css" &gt;
+			Internal style sheet-> Internal styles are defined within the style element, inside the head section of an HTML page:
+			
+			
+			<h3>INLINE STYLE</h3>
+			This is a good place for reference: <a href="http://www.w3schools.com/css/css_howto.asp">www.w3schools.com/css/css_howto.asp</a>
+			
+
+		<div><img src="Capturew3.jpg" alt="not found"></div>	
+		<p>
+			(I tested later that it doesnt matter where you put the &lt;styles&gt; or the links, it will work, though its totally incorrect)	
+		</p>
+		<p>
+			HTML tag -> Use an HTML tag in css to intruct the program to use that style on all those tags....OR
+			Use the the CLASS tag in HTML and then describe it in CSS, eg: .description, .content
+		</p>
+	</div>	
+		<h2 class="subnotes">Notes</h2>
+		<div>
+			Where to write code for practice:<br>
+			<br>codepen.io
+			<br>scratchpad.io<br><br>
+
+			Text Editors<br><br>
+
+					Sublimetext2<br>
+					Notepad<br>
+					Notepad++<br>
+						<p>
+						(I copied this from instructor notes. This explains an important part of my interest in learning programming)
+
+						<div>Thinking like a Programmer</div>
+
+						<p>A large goal of this Nanodegree is to give you practice thinking like a computer programmer. Longtime programmers will often talk about how the programming thought process has helped them in other areas of their life, but what does it mean to "think like a programmer?" In this Nanodegree we will focus on five specific ways of thinking that all programmers have to use all the time. We will come back to these ideas repeatedly throughout the Nanodegree.
+						
+						<ol>
+							<li>Procedural Thinking</li>
+							<li>Abstract Thinking</li>
+							<li>Systems Thinking</li>
+												<!--Systems thinking happens when you break a big problem down into smaller pieces. Programmers do this when they create a plan (often on paper) for how a program will work. It involves big-picture thinking and decision-making about a problem and how different pieces of a program can work together to solve it. If this is unclear now, don't worry! You'll understand what this means much more clearly by the end of the Nanodegree.
+												-->
+							<li>Technological Empathy</li>
+							<li> Debugging</li>
+						</ol>
+						<!--	
+						Collect evidence (what makes this program fail?)
+						Generate theories (what may have caused this problem?)
+						Test those theories (if my theory is correct, how could I find out?)
+						Fix the problem
+						-->
+						
+		</div>			
+</body>
+</html>
